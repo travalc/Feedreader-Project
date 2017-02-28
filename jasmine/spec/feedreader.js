@@ -70,9 +70,7 @@ $(function() {
 
 
         beforeEach(function(done) {
-            loadFeed(0, function() { //load first feed
-                done();
-            });
+            loadFeed(0, done);
         });
         it('should load at least one entry in the feed container', function() {
             var entry = $('.entry');
