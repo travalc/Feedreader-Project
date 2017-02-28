@@ -73,7 +73,7 @@ $(function() {
             loadFeed(0, done);
         });
         it('should load at least one entry in the feed container', function() {
-            var entry = $('.entry');
+            var entry = $('.feed .entry');
             console.log(entry.length);
             expect(entry.length).not.toBe(0); // insure that feed container isn't empty
 
